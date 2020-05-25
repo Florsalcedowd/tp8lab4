@@ -1,4 +1,4 @@
-# Trabajo práctivo N° 8: Angular
+# Trabajo práctico N° 8: Angular
 
 Trabajo práctico realizado para la cátedra Laboratorio 4 dictada por Prof. Gerardo Magni
 Tecnicatura Universitaria en Programación - UTN FRM
