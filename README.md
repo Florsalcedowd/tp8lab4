@@ -1,4 +1,29 @@
-# Tp8Angular
+# Trabajo práctivo N° 8: Angular
+
+Trabajo práctico realizado para la cátedra Laboratorio 4 dictada por Prof. Gerardo Magni
+Tecnicatura Universitaria en Programación - UTN FRM
+
+## Dependencias
+
+```
+npm install bootstrap jquery popper.js
+```
+
+Agregar al archivo angular.json en el "build"
+
+```json
+"styles": [
+    "./node_modules/bootstrap/dist/css/bootstrap.css",
+    "src/styles.css"
+],
+"scripts": [
+    "./node_modules/jquery/dist/jquery.min.js",
+    "./node_modules/popper.js/dist/umd/popper.js",
+    "./node_modules/bootstrap/dist/js/bootstrap.js"
+]
+```
+
+## Tp8Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
