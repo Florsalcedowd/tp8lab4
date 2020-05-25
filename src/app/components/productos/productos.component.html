@@ -1,0 +1,24 @@
+<div class="container mt-5">
+    <div class="row mb-3">
+        <h1>
+            Instrumentos</h1>
+    </div>
+    <div class="row">
+        <div class="card mr-4 mb-4" style="width: 20rem;" *ngFor="let instrumento of instrumentos; let i = index">
+            <img class="card-img-top" src="assets/images/{{instrumento.imagen}}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title tituloTarjeta">{{instrumento.instrumento}}</h5>
+                <p class="card-text precio">$ {{instrumento.precio}}</p>
+                <div *ngIf="instrumento.costoEnvio == 'G'; else elseBlock" class="envioGratis">
+                    <img src="assets/images/camion.png" alt="camion"> Envío gratis a todo el país
+                </div>
+                <ng-template #elseBlock>
+                    <span class="costoEnvio">Costo de envío interior de Argentina: {{instrumento.costoEnvio}}</span>
+                    <br>
+                </ng-template>
+                <br>
+                <button (click)="verDetalle(instrumento.id)" class="btn btn-primary btn-block">Detalle</button>
+            </div>
+        </div>
+    </div>
+</div>
